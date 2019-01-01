@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import Block from '../Block';
 
 /* tslint:disable */
-storiesOf('button', module).add('with text', () => (
+storiesOf('button', module).add('with sample', () => (
   <div>
     <Block color={'red'} />
     <Block color={'orange'} />
