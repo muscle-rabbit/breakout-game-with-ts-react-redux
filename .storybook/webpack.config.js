@@ -5,8 +5,12 @@ module.exports = (baseConfig, env, config) => {
     test: /\.tsx?$/,
     exclude: /node_modules/,
     include: [/stories/, /components/],
-    loader: 'ts-loader'
+    loader: 'awesome-typescript-loader'
   });
   config.resolve.extensions.push('.ts', '.tsx');
+  config.resolve.alias['@atoms'] = path.resolve(
+    __dirname,
+    'src/components/atoms'
+  );
   return config;
 };

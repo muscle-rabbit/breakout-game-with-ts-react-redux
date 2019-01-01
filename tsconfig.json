@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "build/lib",
     "module": "commonjs",
     "target": "es5",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
@@ -9,8 +8,7 @@
     "jsx": "react",
     "moduleResolution": "node",
     "rootDir": "src",
-    "baseUrl": "./",
-    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
@@ -22,8 +20,10 @@
     "experimentalDecorators": true,
     "paths": {
       "@atoms*": ["src/components/atoms/*"],
-      "@molecules*": ["src/components/atoms/*"],
-      "*": ["src/mytypes/*"]
+      "@molecules*": ["src/components/molecules/*"],
+      "@organisms*": ["src/components/organisms/*"],
+      "@templates*": ["src/components/templates/*"],
+      "@pages*": ["src/components/pages/*"]
     }
   },
   "include": ["src/**/*"],
