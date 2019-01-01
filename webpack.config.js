@@ -17,7 +17,15 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      modules: ['node_modules'],
+      '@atoms': path.resolve(__dirname, 'src/components/atoms'),
+      '@molecules': path.resolve(__dirname, 'src/components/molecules'),
+      '@organism': path.resolve(__dirname, 'src/components/organisms'),
+      '@templates': path.resolve(__dirname, 'src/components/templates'),
+      '@pages': path.resolve(__dirname, 'src/components/@pages')
+    }
   },
   output: {
     filename: 'static/js/bundle.js',
